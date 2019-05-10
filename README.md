@@ -23,7 +23,7 @@
 * `cd face_enhancer` 로 face_enhancer 디렉토리로 이동 후, `python prepare.py` 실행 `./data/face/test_sync`와 `./data/face/test_real` 생성 확인 가능
 * `python main.py` 실행하여 학습 후, face gan 모델 `./checkpoints/`에 저장
 
-### Genrate 방법(Test)
+### Generate 방법(Test)
 * source video(Generative model의 input)에 대해  `mv.mp4`로 이름 변경 후,  `./data/source/`에 넣고 `python make_source.py` 실행`./data/source/test_label_ori`와 `./data/source/pose_souce.npy` 생성 확인 가능
 * `python normalization.py` 실행하여 target video에 맞게 pose를 rescale
 * `python transfer.py` 실행 하여 `./result`에서 결과 확인
